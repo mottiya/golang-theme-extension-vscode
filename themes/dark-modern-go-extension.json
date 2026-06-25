@@ -1,0 +1,187 @@
+{
+	"$schema": "vscode://schemas/color-theme",
+	"name": "Dark Modern Go Extension",
+	"include": "./dark-modern-base.json",
+	"semanticHighlighting": true,
+	"tokenColors": [
+		{
+			"name": "Go: comments italic",
+			"scope": [
+				"comment.line.double-slash.go",
+				"comment.block.go",
+				"punctuation.definition.comment.go"
+			],
+			"settings": {
+				"foreground": "#6A9955",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Go: imports italic",
+			"scope": [
+				"entity.name.import.go",
+				"variable.other.import.go"
+			],
+			"settings": {
+				"foreground": "#ce9178",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Go: parameters and named returns italic",
+			"scope": [
+				"variable.parameter.go"
+			],
+			"settings": {
+				"foreground": "#9CDCFE",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Go: struct fields italic",
+			"scope": [
+				"variable.other.property.go"
+			],
+			"settings": {
+				"foreground": "#9CDCFE",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Go: functions",
+			"scope": [
+				"entity.name.function.go",
+				"entity.name.function.support.go",
+				"entity.name.function.support.builtin.go"
+			],
+			"settings": {
+				"foreground": "#DCDCAA",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Go: types",
+			"scope": [
+				"entity.name.type.go",
+				"entity.name.type.any.go",
+				"entity.name.type.comparable.go"
+			],
+			"settings": {
+				"foreground": "#4EC9B0",
+				"fontStyle": ""
+			}
+		}
+	],
+	"semanticTokenColors": {
+		"namespace:go": "#a59eff",
+		"type.defaultLibrary:go": "#4EC9B0",
+			"typeParameter:go": {
+			"foreground": "#4EC9B0",
+			"fontStyle": ""
+		},
+		"typeParameter.definition:go": {
+			"foreground": "#4EC9B0",
+			"fontStyle": "italic"
+		},
+		"type.struct:go": {
+			"foreground": "#4EC9B0",
+			"fontStyle": ""
+		},
+		"type.definition.struct:go": {
+			"foreground": "#4EC9B0",
+			"fontStyle": ""
+		},
+		"type.interface:go": {
+			"foreground": "#ffb593",
+			"fontStyle": ""
+		},
+		"type.definition.interface:go": {
+			"foreground": "#ffb593",
+			"fontStyle": ""
+		},
+		"type.signature:go": {
+			"foreground": "#DCDCAA",
+			"fontStyle": ""
+		},
+		"type.definition.signature:go": {
+			"foreground": "#DCDCAA",
+			"fontStyle": ""
+		},
+			"type:go": "#4EC9B0",
+		"function:go": "#DCDCAA",
+		"method:go": "#ffc965",
+		"variable:go": "#9CDCFE",
+		"variable.readonly:go": "#4FC1FF",
+		"variable.function:go": "#DCDCAA",
+		"variable.signature:go": "#DCDCAA",
+		"parameter:go": {
+			"foreground": "#9CDCFE",
+			"fontStyle": "italic"
+		},
+		"parameter.declaration:go": {
+			"foreground": "#9CDCFE",
+			"fontStyle": "italic"
+		},
+		"parameter.definition:go": {
+			"foreground": "#9CDCFE",
+			"fontStyle": "italic"
+		},
+		"property:go": {
+			"foreground": "#9CDCFE",
+			"fontStyle": "italic"
+		},
+		"property.declaration:go": {
+			"foreground": "#9CDCFE",
+			"fontStyle": "italic"
+		},
+		"property.definition:go": {
+			"foreground": "#9CDCFE",
+			"fontStyle": "italic"
+		},
+		"property.struct:go": {
+			"foreground": "#4EC9B0",
+			"fontStyle": "italic"
+		},
+		"property.definition.struct:go": {
+			"foreground": "#4EC9B0",
+			"fontStyle": "italic"
+		},
+		"property.interface:go": {
+			"foreground": "#ffb593",
+			"fontStyle": "italic"
+		},
+		"property.definition.interface:go": {
+			"foreground": "#ffb593",
+			"fontStyle": "italic"
+		},
+		"property.signature:go": {
+			"foreground": "#DCDCAA",
+			"fontStyle": "italic"
+		},
+		"property.definition.signature:go": {
+			"foreground": "#DCDCAA",
+			"fontStyle": "italic"
+		},
+		"property.readonly:go": {
+			"foreground": "#9CDCFE",
+			"fontStyle": "italic"
+		},
+		"label:go": {
+			"foreground": "#4FC1FF",
+			"fontStyle": "italic"
+		},
+		"label.definition:go": {
+			"foreground": "#4FC1FF",
+			"fontStyle": "italic"
+		},
+		"operator:go": "#D4D4D4",
+		"number:go": "#B5CEA8",
+		"string:go": "#CE9178",
+		"string.format:go": "#4FC1FF",
+		"comment:go": {
+			"foreground": "#6A9955",
+			"fontStyle": "italic"
+		}
+	},
+	"type": "dark"
+}

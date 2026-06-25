@@ -1,0 +1,14 @@
+.venv/**
+.vscode/**
+code/**
+node_modules/**
+.vscode-test/**
+.agents/**
+.codex/**
+.git/**
+.gitignore
+pnpm-lock.yaml
+pnpm-workspace.yaml
+package-lock.json
+vsc-extension-quickstart.md
+/правки
