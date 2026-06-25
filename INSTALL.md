@@ -49,17 +49,25 @@ Select:
 Dark Modern Go Extension
 ```
 
-## Recommended VS Code Settings
+## Recommended Global VS Code Settings
 
-Add this to `settings.json`:
+Put these settings in the global VS Code user settings:
+
+```text
+~/.config/Code/User/settings.json
+```
 
 ```json
 {
 	"workbench.colorTheme": "Dark Modern Go Extension",
 	"editor.semanticHighlighting.enabled": true,
+	"[go]": {
+		"editor.semanticHighlighting.enabled": true
+	},
+	"go.useLanguageServer": true,
 	"gopls": {
-		"semanticTokens": true,
-		"semanticTokenTypes": {
+		"ui.semanticTokens": true,
+		"ui.semanticTokenTypes": {
 			"keyword": false
 		}
 	}
@@ -69,6 +77,36 @@ Add this to `settings.json`:
 The `keyword: false` setting lets TextMate keep Dark Modern's keyword colors
 for Go control-flow keywords, while semantic tokens still color functions,
 methods, types, fields, parameters, labels, package names, and format strings.
+
+If VS Code does not find `gopls`, install it first:
+
+```bash
+go install golang.org/x/tools/gopls@latest
+```
+
+If it is installed but not available in VS Code's `PATH`, point the Go extension
+to it explicitly:
+
+```json
+{
+	"go.alternateTools": {
+		"gopls": "/home/your-user/go/bin/gopls"
+	}
+}
+```
+
+On this machine, the path is:
+
+```text
+/home/user22/go/bin/gopls
+```
+
+If you do not want global settings on another machine, put the same JSON into
+the workspace-only file:
+
+```text
+.vscode/settings.json
+```
 
 ## Development Test
 
